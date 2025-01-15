@@ -29,10 +29,15 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'change-me')
 DEBUG = bool(int(os.getenv('DEBUG', 0)))
 
 ALLOWED_HOSTS = [
+    '*'
+]  # Configuração para testes
+
+'''
+ALLOWED_HOSTS = [
     h.strip() for h in os.getenv('ALLOWED_HOSTS', '').split(',')
     if h.strip()
-]
-
+]  # Configuração para produção
+'''
 
 
 # Application definition
@@ -158,3 +163,10 @@ CHANNEL_LAYERS = {
 
 LOGIN_REDIRECT_URL = "chat-page"
 LOGOUT_REDIRECT_URL = "login-user"
+
+
+# Configurações para testes com Ngrok
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.ngrok-free.app',
+]

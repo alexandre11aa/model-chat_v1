@@ -3,7 +3,7 @@
 // Função para criar um novo WebSocket para o chat em grupo
 export const createGroupChatSocket = (groupChatId) => {
     const socket = new WebSocket(
-        'ws://' + window.location.host + '/ws/chat/group/' + groupChatId + '/'
+        'wss://' + window.location.host + '/ws/chat/group/' + groupChatId + '/'
     );
 
     return socket;  // Retorna o objeto WebSocket
