@@ -1,6 +1,6 @@
 # Model Chat
 
-Modelo de chat assíncrono usando Python, Django, Websocket, Javascript, Bootstrap, Docker, dentre outras tecnologias. Nele é possível a troca de mensagens entre usuários em chats privados ou grupos.
+Modelo de chat monolito assíncrono usando Python, Django, Websocket, Javascript, Bootstrap, Docker, dentre outras tecnologias. Nele é possível a troca de mensagens entre usuários em chats privados ou grupos.
 
 ![chat](model_chat/static/img/duo_chat.gif)
 
